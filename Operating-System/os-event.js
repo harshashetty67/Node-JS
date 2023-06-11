@@ -14,7 +14,9 @@ console.log(opSys.hostname()); // Returns the hostname of the machine on which o
 
 console.log(opSys.type()); // Returns the type of os
 
-console.log(Math.round(opSys.freemem()/(1024*1024))+' MB'); // Returns the amount of free system memory in bytes as an integer. Here its converted to MB
+console.log(`Total Memory : ${Math.round(opSys.freemem()/(1024*1024))} MB`); // Returns the amount of free system memory in bytes as an integer. Here its converted to MB
+
+console.log(opSys.userInfo()); // Returns the info about current user.
 
 
 //-------There are lot of os related function and properties available. See : https://nodejs.org/dist/latest-v18.x/docs/api/os.html#oshostname for more details.
