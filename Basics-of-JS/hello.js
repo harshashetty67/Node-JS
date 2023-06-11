@@ -2,10 +2,20 @@ function chimbu(num)
 {
 if(num%2 == 0)
 {
-    console.log(num**2/2);
+    console.log("Okay let me print, Hello-World");
     return;
 }
-console.log((num-1)/2);
+console.log("I wont print hello-world, go-away..");
 }
 
-chimbu(6);
+//chimbu(6);
+
+
+// ------------Adding two numbers----------------
+
+function Add(num1, num2)
+{
+  return num1+num2;
+}
+
+module.exports = Add;
